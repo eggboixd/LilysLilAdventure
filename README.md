@@ -5,14 +5,14 @@ A school project my friends and I made that implements fundamental frontend-web 
 
 * Credits
 *  Programmer :
-    -Fadhil Revinno Hairiman
-   - Arief Hassani
+- Fadhil Revinno Hairiman
+- Arief Hassani
 *  Character Designer :
-    -Aqila Rakhshana
+- Aqila Rakhshana
 *  Background Artist :
-    -Bagaskara Fatwa Ramadhan
-    -Hanum Daffandra M
+- Bagaskara Fatwa Ramadhan
+- Hanum Daffandra M
 * Graphic Designer :
-   - Audrey Amelia Putri
+- Audrey Amelia Putri
 *  Soundtrack Artist
-    -Fadhil Revinno Hairiman
+- Fadhil Revinno Hairiman
