@@ -1,0 +1,353 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+
+@font-face {
+  font-family: 'spleen';
+  src: url(fonts/spleen.otf);
+}
+
+@font-face {
+  font-family: 'pixel';
+  src: url(fonts/pixel.TTF);
+}
+
+
+body {
+  font-size:16px;
+  margin: 0;
+  padding:0px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-image: url(imgs/quick-bg.png);
+}
+
+button {
+  border:none;
+  appearance: none;
+  outline: none;
+  display: inline-block;
+  font-size: 1.5em;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 48px 12px 48px;
+  border-radius: 4px;
+  color: aliceblue;
+  background-color: black;
+  border: 2px aliceblue;
+}
+
+button{transition-duration: 0.4s;}
+button:hover{
+  font-size: 1.6em;
+  background-color: gray;
+}
+
+
+
+.bgm {
+  position: absolute;
+  top: 64%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.world {
+  overflow: hidden;
+  position: relative;
+}
+
+.score {
+  position: absolute;
+  font-size: 5vmin;
+  right: 1vmin;
+  top: 1vmin;
+  font-family : 'spleen' ,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border:none;
+  appearance: none;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 24px 8px 24px;
+  border-radius: 4px;
+  color:chocolate;
+  background-color: aliceblue;
+  border: 2px black;
+  border-radius: 20px;
+  z-index: 8;
+}
+
+.highscore {
+  position: absolute;
+  font-size: 5vmin;
+  right: 15vmin;
+  top: 1vmin;
+  font-style: oblique;
+}
+
+.start-screen {
+  position: absolute;
+  font-size: 5vmin;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
+}
+
+.ground {
+  --left: 0;
+  position: absolute;
+  width: 300%;
+  bottom: 0;
+  left: calc(var(--left) * 1%);
+  opacity: 0.45;
+  z-index: 1;
+}
+
+.tree {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 100%;
+  bottom: 0;
+  z-index: 2;
+}
+
+.bench {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 100%;
+  bottom: 0;
+  z-index: 3;
+  scale: 0.25;
+  top: 25.5%;
+}
+
+.grass {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 100%;
+  bottom: 0;
+  z-index: 1;
+  scale: 0.2;
+  top: 5%;
+}
+
+.grass2 {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 100%;
+  bottom: 0;
+  z-index: 1;
+  scale: 0.12;
+  top: 20%;
+}
+
+.flower {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 100%;
+  bottom: 0;
+  z-index: 1;
+  scale: 0.15;
+  top: 14%;
+}
+
+.flower2 {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 100%;
+  bottom: 0;
+  z-index: 1;
+  scale: 0.15;
+  top: 20%;
+}
+
+.cloud {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 160%;
+  bottom: 0;
+  top: 5;
+  z-index: 2;
+  scale: 0.10;
+  opacity: 75%;
+}
+
+.cloud2 {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 160%;
+  bottom: 0;
+  top: 5;
+  z-index: 2;
+  scale: 0.15;
+  opacity: 80%;
+}
+
+.lily {
+  --bottom: 0;
+  position: absolute;
+  left: 1%;
+  height: 30%;
+  bottom: calc(var(--bottom) * 1%);
+  z-index: 5;
+}
+
+.cactus {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 30%;
+  bottom: 0;
+  z-index: 3;
+}
+
+.puddle {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 3%;
+  bottom: 0;
+  z-index: 4;
+  scale: 2.3;
+}
+
+.play {
+  cursor: pointer;
+  position: absolute;
+  left: 24%;
+  top: -30%;
+  z-index: 10;
+  scale: 0.55;
+}
+
+.play{transition-duration: 0.4s;}
+.play:hover{
+  scale: 0.57;
+}
+
+.retry {
+  cursor: pointer;
+  position: absolute;
+  left: 29.7%;
+  top: 40%;
+  z-index: 11;
+  scale: 0.7;
+}
+
+.retry{transition-duration: 0.4s;}
+.retry:hover{
+  scale: 0.75;
+}
+
+@font-face {
+  font-family: 'balladon_demoregular';
+  src: url('balladondemo-regular-webfont.woff2') format('woff2'),
+       url('balladondemo-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.sun {
+  position: absolute;
+  scale: 0.2;
+  top: -40%;
+  right: 40%;
+}
+
+
+.lebah {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  bottom: 0;
+  top: 50%;
+  z-index: 3;
+  scale: 1.7;
+}
+
+
+
+/* credit */
+
+.close {
+  position: absolute;
+  scale: 0.15;
+  top: -5%;
+  left: 66.5%;
+  z-index: 16;
+  cursor: pointer;
+}
+
+.close{transition-duration: 0.4s;}
+.close:hover{
+  scale: 0.165;
+}
+
+.credit {
+  position: absolute;
+  scale: 0.15;
+  top: -5%;
+  left: 66.5%;
+  z-index: 16;
+  cursor: pointer;
+}
+
+.credit{transition-duration: 0.4s;}
+.credit:hover{
+  scale: 0.165;
+}
+
+.close2 {
+  position: absolute;
+  scale: 0.15;
+  top: -5%;
+  left: 66.5%;
+  z-index: 16;
+  cursor: pointer;
+}
+
+.close2{transition-duration: 0.4s;}
+.close2:hover{
+  scale: 0.165;
+}
+
+
+.credit2 {
+  position: absolute;
+  scale: 0.15;
+  top: -5%;
+  left: 66.5%;
+  z-index: 16;
+  cursor: pointer;
+}
+
+
+.credit2{transition-duration: 0.4s;}
+.credit2:hover{
+  scale: 0.165;
+}
+
+.popout {
+  position: absolute;
+  top: -19%;
+  left: 35%;
+  z-index: 15;
+  scale: 0.73;
+}
+.tutor {
+  position: absolute;
+  scale: 0.23;
+  z-index: 9;
+  bottom: -32.5%;
+  right: 8.4%;
+}
+
