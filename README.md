@@ -4,15 +4,15 @@
 A school project my friends and I made that implements fundamental frontend-web knowledge and game logic such as player movements and score counting using javascript. I held a position as the game developer in this project.
 
 * Credits
-* - Programmer
-    Fadhil Revinno Hairiman
-    Arief Hassani
-* - Character Designer
-    Aqila Rakhshana
-* - Background Artist
-    Bagaskara Fatwa Ramadhan
-    Hanum Daffandra M
-* - Graphic Designer
-    Audrey Amelia Putri
-* - Soundtrack Artist
-    Fadhil Revinno Hairiman
+*  Programmer :
+    -Fadhil Revinno Hairiman
+   - Arief Hassani
+*  Character Designer :
+    -Aqila Rakhshana
+*  Background Artist :
+    -Bagaskara Fatwa Ramadhan
+    -Hanum Daffandra M
+* Graphic Designer :
+   - Audrey Amelia Putri
+*  Soundtrack Artist
+    -Fadhil Revinno Hairiman
