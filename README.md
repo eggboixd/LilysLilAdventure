@@ -1,12 +1,9 @@
-Sure! Here's a polished version of your GitHub README with improved formatting and added details:
 
----
-
-# Lily's Lil Adventure: A Simple Chrome Dinosaur-Like Web Game
+# Lily's Lil Adventure: A Simple Chrome Dinosaur-Like Web Game 🐶
 
 ![Lily's Lil Adventure](https://github.com/eggboixd/LilysLilAdventure/assets/92006376/75ef654b-ca53-4da8-8443-91f19e922ff6)
 
-**Lily's Lil Adventure** is a school project that implements fundamental frontend web knowledge and game logic, such as player movements and score counting using JavaScript. I contributed as the game developer in this project.
+**Lily's Lil Adventure** is a school game project that implements fundamental frontend web knowledge and game logic, such as player movements and score counting using JavaScript. I contributed as the game developer in this project. The theme was inspired by my friend's pet husky named "Lily".
 
 ## Table of Contents
 - [Features](#features)
