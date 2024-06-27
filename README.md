@@ -3,7 +3,7 @@
 
 ![Lily's Lil Adventure](https://github.com/eggboixd/LilysLilAdventure/assets/92006376/75ef654b-ca53-4da8-8443-91f19e922ff6)
 
-**Lily's Lil Adventure** is a school game project that implements fundamental frontend web knowledge and game logic, such as player movements and score counting using JavaScript. I contributed as the game developer in this project. The theme was inspired by my friend's pet husky named "Lily".
+**Lily's Lil Adventure** is a school game project that implements fundamental frontend web knowledge and game logic, such as player movements and score counting using JavaScript. I contributed as the game developer & soundtrack artist in this project. The theme was inspired by my friend's pet husky named "Lily".
 
 ## Table of Contents
 - [Features](#features)
